@@ -1,0 +1,12 @@
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Virtual environment
+venv/
+
+# System-specific
+.DS_Store

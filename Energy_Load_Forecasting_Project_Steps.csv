@@ -1,0 +1,13 @@
+Step,Phase,Task
+1,Planning & Setup,"Define project scope and objectives (e.g., forecast next-day hourly electricity demand for a region). Create a new project folder structure and set up a GitHub repo."
+2,Environment Setup,"Install required Python packages: pandas, numpy, requests, matplotlib, scikit-learn, tensorflow/keras, etc. Create a virtual environment if needed."
+3,Data Collection,Set up scripts to fetch hourly load data from ENTSO-E API. Collect historical weather data from Open-Meteo API. Store raw CSV/JSON files.
+4,Data Cleaning,Parse and clean the collected datasets. Resample to hourly if needed. Merge weather and load data by timestamp. Handle missing/null values.
+5,Feature Engineering,"Create lag features, rolling averages, time-based features (hour, day, weekend, holiday). Normalize or scale the features."
+6,Exploratory Data Analysis (EDA),"Plot time series, heatmaps, seasonal decomposition. Look for trends, seasonality, outliers, and correlations."
+7,Baseline Modelling,Build a simple ARIMA or Linear Regression model. Measure basic MAE/RMSE to compare with advanced models later.
+8,Machine Learning Models,Train and tune XGBoost or Random Forest regressors using engineered features. Evaluate and compare to baseline.
+9,Deep Learning Model (Optional),Build an LSTM model on multivariate input sequences. Use train/test splits with attention to sequence integrity.
+10,Model Evaluation,"Compare models using MAE, RMSE, R², and plot predictions vs actuals. Tune hyperparameters if needed."
+11,Dashboard / Reporting,"Create a Streamlit or Power BI dashboard to present live forecasts, model insights, and visual comparisons."
+12,Documentation & Finalization,Document code with markdown cells or README. Prepare final report or PDF. Upload to GitHub or personal portfolio.
