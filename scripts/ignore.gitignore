@@ -10,3 +10,5 @@ venv/
 
 # System-specific
 .DS_Store
+
+echo venv/ >> .gitignore
